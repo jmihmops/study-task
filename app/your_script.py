@@ -5,5 +5,5 @@ if __name__ == "__main__":
     while True:
         # Выводим текущее время
         print(f"Current time: {datetime.now()}")
-        # Задержка 5 минут
-        time.sleep(300)
+        # Задержка 10 секунд для тестирования
+        time.sleep(10)

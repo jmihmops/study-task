@@ -8,5 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копируем скрипт
 COPY . .
 
-# Запускаем скрипт в бесконечном цикле
-CMD ["sh", "-c", "while true; do python your_script.py; sleep 300; done"]
+# Запускаем скрипт
+CMD ["python", "your_script.py"]
