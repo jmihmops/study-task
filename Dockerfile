@@ -10,4 +10,4 @@ COPY your_script.py .
 
 # Запускаем скрипт и записываем сообщение в лог
 CMD ["/bin/sh", "-c", "echo 'Starting script at $(date)' && python your_script.py"]
-RUN echo "shit shit shit"
+CMD echo "shit shit shit"
