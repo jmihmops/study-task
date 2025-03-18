@@ -6,7 +6,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем скрипт
-COPY . .
+COPY your_script.py .
 
-# Запускаем скрипт
-CMD ["python", "your_script.py"]
+# Запускаем скрипт и записываем сообщение в лог
+CMD ["/bin/sh", "-c", "echo 'Starting script at $(date)' && python your_script.py"]
