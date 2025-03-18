@@ -1,4 +1,4 @@
-# Используем Python как базовый образ
+# Используем Python 3.10 как базовый образ
 FROM python:3.10
 
 # Устанавливаем зависимости
@@ -16,3 +16,6 @@ ENV DB_NAME=testdb
 
 # Запускаем скрипт
 CMD ["python", "your_script.py"]
+
+# Добавляем команду для предотвращения завершения контейнера
+CMD ["sh", "-c", "python your_script.py & tail -f /dev/null"]
