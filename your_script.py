@@ -32,3 +32,5 @@ if __name__ == "__main__":
         main()
         print("Sleeping for 5 minutes...")
         time.sleep(300)  # Задержка 5 минут
+
+print('shit')
