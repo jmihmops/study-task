@@ -15,7 +15,4 @@ ENV DB_PASSWORD=password
 ENV DB_NAME=testdb
 
 # Запускаем скрипт
-CMD ["python", "your_script.py"]
-
-# Добавляем команду для предотвращения завершения контейнера
 CMD ["sh", "-c", "python your_script.py & tail -f /dev/null"]
