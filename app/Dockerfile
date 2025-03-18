@@ -14,5 +14,5 @@ ENV DB_USER=user
 ENV DB_PASSWORD=password
 ENV DB_NAME=testdb
 
-# Запускаем скрипт в бесконечном цикле и предотвращаем завершение контейнера
-CMD ["sh", "-c", "while true; do python your_script.py; echo 'sthi'; sleep 300; done"]
+# Запускаем скрипт в бесконечном цикле
+CMD ["sh", "-c", "while true; do python your_script.py; sleep 300; done"]
