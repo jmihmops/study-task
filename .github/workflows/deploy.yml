@@ -27,7 +27,7 @@ jobs:
         echo "POSTGRES_PORT=5432" >> .env
 
     - name: Connect to server and deploy
-      uses: appleboy/ssh-action@v0.1.7
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USER }}
@@ -37,5 +37,5 @@ jobs:
           cd /home/vboxuser/study-task
           docker-compose down
           git pull origin main
-          mv /home/vboxuser/study-task/.github/workflows/.env /home/vboxuser/study-task/.env
+          mv /path/to/generated/.env /home/vboxuser/study-task/.env
           docker-compose up -d
